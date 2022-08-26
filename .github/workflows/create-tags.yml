@@ -1,0 +1,11 @@
+name: "Create Tags"
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  create_tags:
+    name: 'Create release tags'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: q4chrisj/tag-bot@develop
