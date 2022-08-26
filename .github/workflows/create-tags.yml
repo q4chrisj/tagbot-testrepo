@@ -9,3 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: q4chrisj/tag-bot@develop
+        with: 
+          token: ${{ github.token }}
