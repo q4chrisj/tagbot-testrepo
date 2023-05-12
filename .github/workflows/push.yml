@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: q4chrisj/preflight-checklist@main
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+        with: 
+          token: ${{ github.token }}
