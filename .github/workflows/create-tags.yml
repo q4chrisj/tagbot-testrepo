@@ -4,6 +4,11 @@ on:
     types: [closed]
 
 jobs:
+  preflight_check:
+    name: 'Pre release checks'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: q4chrisj/preflight-check@main
   create_tags:
     name: 'Create release tags'
     runs-on: ubuntu-latest
