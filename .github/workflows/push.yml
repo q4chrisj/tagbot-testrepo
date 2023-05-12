@@ -8,6 +8,7 @@ jobs:
     name: 'Pre release checks'
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: q4chrisj/preflight-checklist@main
         with: 
           token: ${{ github.token }}
