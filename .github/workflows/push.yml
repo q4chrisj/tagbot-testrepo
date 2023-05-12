@@ -8,4 +8,4 @@ jobs:
     name: 'Pre release checks'
     runs-on: ubuntu-latest
     steps:
-      - uses: q4chrisj/preflight-check@main
+      - uses: q4chrisj/preflight-checklist@main
