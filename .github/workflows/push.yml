@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
+  get_staging_secrets:
+    name: "Get staging secrets"
+    runs-on: ubuntu-latest
+    environment: stage
+    run: echo "STAGE_ACCESS_ID={secrets.AWS_ACCESS_KEY_ID}" >> $GITHUB_STATE
   preflight_check:
     name: 'Pre release checks'
     runs-on: ubuntu-latest
