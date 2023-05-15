@@ -3,7 +3,8 @@ name: "Preflight Checks"
 on:
   push:
     branches:
-      - 'main'
+      - main
+  workflow_dispatch:
 
 jobs:
   preflight_check:
