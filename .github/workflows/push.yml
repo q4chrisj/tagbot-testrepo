@@ -15,5 +15,5 @@ jobs:
       - uses: q4chrisj/preflight-checklist@main
         with: 
           token: ${{ github.token }}
-          target-aws-key-id: "secret_key_test"
-          target-aws-secret-access-key: "secret_access_test"
+          # target-aws-key-id: "secret_key_test"
+          # target-aws-secret-access-key: "secret_access_test"
