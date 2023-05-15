@@ -13,6 +13,7 @@ jobs:
   preflight_check:
     name: 'Pre release checks'
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - uses: actions/checkout@v3
       - uses: q4chrisj/preflight-checklist@main
